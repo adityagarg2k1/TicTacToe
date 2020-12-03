@@ -5,6 +5,19 @@ public class TicTacToeGame {
 
 	public static void main(String[] args) {
 		char[] board = createBoard();
+                Scanner userInput = new Scanner(System.in);
+                char userLetter = chooseBoard(userInput);
+                if(userLetter = 'X')
+                {       computerLetter="O";
+                }
+                else if(userLetter=="O")
+                {        computerLetter="X";
+                }
+                else
+                {
+                System.Out.Print("Enter only X or O");
+                }
+
 	}
 	//User Case1
 	private static char[] createBoard() {
@@ -14,5 +27,9 @@ public class TicTacToeGame {
 		}
 		return board;
 	}
-
+	//User Case2
+        private static char chooseBoard(Scanner userInput) {
+                System.out.print("Enter your option between X or O- ");
+                return userInput.next.charAt(0);
+        }
 }

@@ -5,6 +5,7 @@ public class TicTacToeGame {
 
 	public static void main(String[] args) {
 		char[] board = createBoard();
+
 	}
 	//User Case1
 	public static char[] createBoard() {
@@ -14,7 +15,5 @@ public class TicTacToeGame {
 		}
 		return board;
 	}
-
-        }
 
 }
